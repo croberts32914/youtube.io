@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+
+<body>
+<style>
+
+body {
+  background: linear-gradient(to right, #FFDAB9, #FF4500, #87CEFA, #00008B, black);
+  font-family: 'Papyrus', Fantasy;
+  background-size: cover;
+  /* This ensures the image covers the entire container */
+  background-repeat: no-repeat;
+  /* Prevents image from repeating */
+  background-attachment: fixed;
+  /* Fixed background */
+}
+
+.navbar {
+  text-align: center;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a.active {
+  font-weight: bold;
+}
+
+/* Style for the image container */
+.image-container {
+  max-width: 150px; /* Adjust the max width as needed */
+  max-height: 150px; /* Adjust the max height as needed */
+  overflow: hidden; /* Hide any overflowing content */
+  border: 1px solid #ccc; /* Add a border for the box effect */
+  margin: 0 auto; /* Center the image */
+}
+
+/* Style for the image */
+.column {
+  width: 30%; /* Adjust the width of the side content */
+}
+
+.image-column {
+  width: 40%; /* Adjust the width of the image */
+  margin: 0 20px; /* Add margin to create space between image and right content */
+}
+
+.image-column img {
+  width: 100%; /* Make the image fill the image-column */
+  height: auto;
+}
+
+.logo {
+  max-width: 100px; /* Adjust the max width as needed */
+  max-height: 100px; /* Adjust the max height as needed */
+  display: inline-block; /* Ensures it stays in the same line with the heading */
+}
+
+/* header style including background and text color */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/* Gradient from light orange (#FFDAB9) to dark orange (#FF4500) */
+  font-family: 'Copperplate', Fantasy;
+
+
+body {
+  background: linear-gradient(to right, #FFDAB9, #FF4500);
+}
+  color:  white; /* Set the text color to white for better visibility */
+  padding: 10px;
+}
+
+/* move logo to the right side of the screen */
+.logo {
+  margin-right: 20px; /* Adjust the margin as needed to separate the logo from the text */
+}
+
+/* logo border color and size */
+.logo img {
+  max-width: 100px; /* Adjust the max width of the logo as needed */
+  max-height: 100px; /* Adjust the max height of the logo as needed */
+  border: 2px solid blue; /* Add a gold border around the logo */
+}
+
+.image-column {
+  border: 2px solid black; /* Black border, adjust the width and color as needed */
+  padding: 10px; /* Optional: Add padding inside the border */
+}
+
+.image-column img {
+  width: 100%; /* Make the image fill the div */
+  height: auto; /* Maintain image aspect ratio */
+  display: block; /* Ensure no extra space below the image */
+}
+
+.footer a {
+  font-size: 1.7em; /* Adjust the font size as needed */
+  color: black; /* Set the text color to black */
+}
+
+.navbar {
+  text-align: center;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: blue;
+}
+
+</style>
+
+  <div class="header">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <h1>Rick & Crystal show</h1>
+  </div>
+
+  <div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+<br>
+  <div class="content">
+    <div class="column">
+
+    </div>
+
+    <div class="image-column">
+      <img src="rickandcrystal.jpeg" alt="Description of the image"> <!-- Add your large image here -->
+    </div>
+
+    <div class="column">
+      </div>
+  </div>
+
+  <center>
+    <div class="footer">
+      <a href="https://www.youtube.com/channel/UCSEWTLmh92WxfEYYgDqG54g">Visit Rick and Crystal on Youtube </a>
+    </div>
+  </center>
+  <br>
+
+</body>
+</html>

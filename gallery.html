@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <title>Gallery</title>
+<style>
+body {
+      font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        text-align: center;
+        background-color: blue;
+        padding: 10px 0;
+        border: 1px solid blue; /* Add this line for the black border */
+      }
+
+      .navbar a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .navbar a.active {
+        font-weight: bold;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* Adjust the number of columns as needed */
+        gap: 10px;
+        padding: 20px;
+      }
+
+      .gallery img {
+        width: 90%;
+        /* Adjust the width to make images larger */
+        height: auto;
+      }
+
+body {
+  background-color: #f3e5ab;
+  background-size: cover;
+  /* This ensures the image covers the entire container */
+  background-repeat: no-repeat;
+  /* Prevents image from repeating */
+  background-attachment: fixed;
+  /* Fixed background */
+    font-family: 'Papyrus', Fantasy;
+}
+
+.navbar {
+  text-align: center;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: blue;
+}
+
+</style>
+</head>
+
+<body>
+    <header class="header">
+    <h1>Gallery</h1>
+    </header>
+
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="gallery">
+        <img src="7.jpeg" alt="Image 7" loading="lazy">
+        <img src="10.jpeg" alt="Image 10" loading="lazy">
+        <img src="3.jpeg" alt="Image 3" loading="lazy">
+        <img src="4.jpeg" alt="Image 4" loading="lazy">
+        <img src="5.jpeg" alt="Image 5" loading="lazy">
+        <img src="1.jpeg" alt="Image 1" loading="lazy">
+        <img src="9.jpeg" alt="Image 9" loading="lazy">
+        <img src="2.jpeg" alt="Image 2" loading="lazy">
+        <img src="11.jpeg" alt="Image 11" loading="lazy">
+      </div>
+
+    <script>
+      (function() {
+        var images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(function(img) {
+          img.setAttribute('loading', 'lazy');
+        });
+      })();
+    </script>
+
+  </body>
+
+</html>

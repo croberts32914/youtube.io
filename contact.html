@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/static/styles.css">
+  <title>Contact</title>
+
+<style>
+
+    body {
+    background-color: #f3e5ab;
+    background-size: cover;
+    /* This ensures the image covers the entire container */
+    background-repeat: no-repeat;
+    /* Prevents image from repeating */
+    background-attachment: fixed;
+    /* Fixed background */
+      font-family: 'Papyrus', Fantasy;
+}
+
+
+body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .navbar {
+      text-align: center;
+      background-color: blue;
+      padding: 10px 0;
+    }
+
+    .navbar a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .navbar a.active {
+      font-weight: bold;
+    }
+
+form {
+      width: 50%;
+      max-width: 800px;
+      margin: 90px auto 0; /* Center the form and create a 20px margin at the top */
+      padding: 30px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      border: 4px solid #000; /* Add border properties */
+
+    }
+
+form textarea {
+      width: 89%;
+      padding: 40px;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+form button {
+      padding: 4px 4px;
+      font-size: 1.2em;
+    }
+
+/* Add this CSS to your existing styles or styles.css file */
+.send-button {
+  background-color: grey;
+  color: white;
+  border: 2px solid black;
+  padding: 5px 10px;
+}
+
+.send-button:hover {
+  background-color: #909090; /* Change to a different color on hover */
+}
+
+.navbar {
+  text-align: center;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: blue;
+}
+
+</style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Contact</h1>
+  </div>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+
+<form action="https://formsubmit.co/c.roberts32914@gmail.com" method="POST">
+  <input type="text" name="Name" placeholder="Full Name" required><br><br>
+  <input type="email" name="Email" placeholder="Email" required><br><br>
+
+  <label for="Message">Message:</label><br>
+  <textarea name="Message" placeholder="Write your message here" required style="padding: 10px;"></textarea><br><br>
+
+  <button class="send-button">Send</button>
+
+</form>
+<br><br><br><br><br><br><br>
+
+</body>
+</html>
